@@ -22,23 +22,23 @@
             <menu>
                 <item
                     android:id="@+id/nav_kynangsong"
-                    android:icon="@drawable/book_icon"
+                    android:icon="@drawable/book_ic"
                     android:title="Kỹ Năng Sống" />
                 <item
                     android:id="@+id/nav_kinhdoanh"
-                    android:icon="@drawable/book_icon"
+                    android:icon="@drawable/book_ic"
                     android:title="Kinh Doanh" />
                 <item
                     android:id="@+id/nav_tinhyeu"
-                    android:icon="@drawable/book_icon"
+                    android:icon="@drawable/book_ic"
                     android:title="Sách Tình Yêu" />
                 <item
                     android:id="@+id/nav_cuocsong"
-                    android:icon="@drawable/book_icon"
+                    android:icon="@drawable/book_ic"
                     android:title="Cuộc Sống" />
                 <item
                     android:id="@+id/nav_tonghop"
-                    android:icon="@drawable/book_icon"
+                    android:icon="@drawable/book_ic"
                     android:title="Tổng Hợp" />
             </menu>
         </item>
