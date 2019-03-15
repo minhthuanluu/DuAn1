@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dangnhapadmin"
+            android:icon="@mipmap/ic_contact"
+            android:title="Đăng Nhập" />
+        <item
+            android:id="@+id/nav_thuviensach"
+            android:icon="@mipmap/ic_gallery"
+            android:title="Thư Viện Sách" />
+        <item
+            android:id="@+id/nav_sachchitiet"
+            android:icon="@mipmap/ic_detail"
+            android:title="Thông Tin Sách Chi Tiết" />
+    </group>
+
+        <item android:title="Thể Loại">
+            <menu>
+                <item
+                    android:id="@+id/nav_kynangsong"
+                    android:icon="@drawable/book_icon"
+                    android:title="Kỹ Năng Sống" />
+                <item
+                    android:id="@+id/nav_kinhdoanh"
+                    android:icon="@drawable/book_icon"
+                    android:title="Kinh Doanh" />
+                <item
+                    android:id="@+id/nav_tinhyeu"
+                    android:icon="@drawable/book_icon"
+                    android:title="Sách Tình Yêu" />
+                <item
+                    android:id="@+id/nav_cuocsong"
+                    android:icon="@drawable/book_icon"
+                    android:title="Cuộc Sống" />
+                <item
+                    android:id="@+id/nav_tonghop"
+                    android:icon="@drawable/book_icon"
+                    android:title="Tổng Hợp" />
+            </menu>
+        </item>
+
+
+    <item android:title="Danh Mục Khác">
+        <menu>
+            <item
+                android:id="@+id/nav_gioithieu"
+                android:icon="@mipmap/ic_contact"
+                android:title="Giới Thiệu" />
+            <item
+                android:id="@+id/nav_phanhoi"
+                android:icon="@mipmap/ic_feedback"
+                android:title="Phản Hồi" />
+            <item
+                android:id="@+id/nav_danhgia"
+                android:icon="@mipmap/ic_evaluate"
+                android:title="Đánh Giá" />
+            <item
+                android:id="@+id/nav_thoat"
+                android:icon="@drawable/exit_icon"
+                android:title="Thoát" />
+        </menu>
+    </item>
+
+</menu>
