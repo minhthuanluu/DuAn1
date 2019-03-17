@@ -7,7 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.example.johnluu.duan1.SQLite.DBHelper;
 import com.example.johnluu.duan1.model.Sach;
-import com.example.johnluu.duan1.model.TheLoai;
 
 import java.util.ArrayList;
 

@@ -12,15 +12,16 @@ import java.util.ArrayList;
 
 public class TheLoaiDAO {
     SQLiteDatabase db;
-    Context c;
     DBHelper dbh;
+    Context c;
 
     public TheLoaiDAO(Context c) {
         this.c=c;
-        dbh=new DBHelper(c);
+        this.dbh=new DBHelper(c);
     }
 
     public void ThemTheLoai(TheLoai tl){
+        dbh=new DBHelper(c);
         db = dbh.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("tentheloai",tl.tentheloai);

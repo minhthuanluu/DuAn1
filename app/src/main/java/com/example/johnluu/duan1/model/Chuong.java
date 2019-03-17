@@ -4,6 +4,7 @@ public class Chuong {
     public int _idchuong;
     public int _idsach;
     public String duongdan;
+    public String tenchuong;
     public String audio;
 
     public Chuong() {

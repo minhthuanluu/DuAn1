@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ecc2c2"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:gravity="center_horizontal"
+        android:text="SỬA THỂ LOẠI"
+        android:textColor="#592020"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/textView2"
+        android:text="Tên Thể Loại"
+        android:textColor="#000"
+        android:layout_toLeftOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tv_id_themTheLoaidialog"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_tentheloai_themTheLoaidialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập tên thể loại" />
+
+    <LinearLayout
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_sua_theloai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:textColor="#592020"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Sửa"/>
+
+        <Button
+            android:id="@+id/bt_huy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginBottom="10dp"
+            android:text="Huỷ"
+            android:textColor="#592020"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

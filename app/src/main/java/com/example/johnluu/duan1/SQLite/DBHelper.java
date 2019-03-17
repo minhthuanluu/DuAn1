@@ -37,6 +37,7 @@ public class DBHelper extends SQLiteOpenHelper {
             (
                 _idchuong integer primary key autoincrement,
                 _idsach integer,
+                tenchuong text,
                 duongdan text,
                 audio text
             )
@@ -71,6 +72,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 "_idchuong integer primary key autoincrement," +
                 "_idsach integer," +
                 "duongdan text," +
+                "tenchuong text,"+
                 "audio text" +
                 ")";
         db.execSQL(sql4);

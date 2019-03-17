@@ -3,6 +3,7 @@ package com.example.johnluu.duan1;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -73,7 +74,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_dangnhapadmin) {
-
+            LoginFragment loginFragment = new LoginFragment();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction()
+                    .replace(R.id.content,loginFragment,loginFragment.getTag())
+                    .commit();
         } else if (id == R.id.nav_thuviensach) {
 
         }else if (id == R.id.nav_gioithieu) {
