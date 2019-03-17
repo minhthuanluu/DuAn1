@@ -128,8 +128,8 @@ public class TheLoaiAdapter extends RecyclerView.Adapter<TheLoaiAdapter.TheLoaiV
 
     public void deleteItem(int position){
         TheLoaiDAO theloaiDAO = new TheLoaiDAO(c);
-        theloaiDAO.xoaTheLoai(position);
-        dstl = theloaiDAO.xemDSTheLoai();
+        theloaiDAO.xoaTheLoai(dstl.get(position)._idtheloai);
         notifyItemRemoved(position);
+        dstl = theloaiDAO.xemDSTheLoai();
     }
 }
