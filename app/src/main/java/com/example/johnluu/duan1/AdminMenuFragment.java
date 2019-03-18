@@ -37,7 +37,6 @@ public class AdminMenuFragment extends Fragment {
                         .commit();
             }
         });
-
         return view;
     }
 

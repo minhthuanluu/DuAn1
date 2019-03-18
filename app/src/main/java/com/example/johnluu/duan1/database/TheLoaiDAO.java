@@ -45,6 +45,7 @@ public class TheLoaiDAO {
     }
 
     public void xoaTheLoai(int _id){
+        dbh = new DBHelper(c);
         db = dbh.getWritableDatabase();
         db.delete("theloai","_idtheloai=?",new String[]{_id+""});
     }
@@ -53,6 +54,6 @@ public class TheLoaiDAO {
         db = dbh.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("tentheloai",tl.tentheloai);
-        db.update("theloai",values,"_id = ?",new String[]{tl._idtheloai+""});
+        db.update("theloai",values,"_idtheloai = ?",new String[]{tl._idtheloai+""});
     }
 }

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class HelloActivity extends AppCompatActivity {
-    Intent i;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,11 +15,11 @@ public class HelloActivity extends AppCompatActivity {
     }
 
     public void vaoMainAct(View view){
-        i = new Intent(HelloActivity.this,MainActivity.class);
+        final Intent i = new Intent(HelloActivity.this,MainActivity.class);
         final ProgressDialog progressDialog = new ProgressDialog(HelloActivity.this,
                 R.style.AppTheme_PopupOverlay);
         progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Authenticating...");
+        progressDialog.setMessage("Đang xử lý...");
         progressDialog.show();
 
         new android.os.Handler().postDelayed(

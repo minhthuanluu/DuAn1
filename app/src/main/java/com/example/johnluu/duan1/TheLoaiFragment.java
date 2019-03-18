@@ -26,7 +26,7 @@ public class TheLoaiFragment extends Fragment {
     TheLoaiDAO tldao;
     TheLoaiAdapter theLoaiAdapter;
     RecyclerView rv_theloai;
-    ArrayList<TheLoai> dstl;
+    ArrayList<TheLoai> dstl = new ArrayList<TheLoai>();
     public TheLoaiFragment() {
 
     }
@@ -70,7 +70,6 @@ public class TheLoaiFragment extends Fragment {
                             capnhatgiaodien_theloai();
                             a.dismiss();
                         }
-
                     }
                 });
 

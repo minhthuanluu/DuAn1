@@ -31,6 +31,7 @@
         android:layout_marginTop="156dp"
         android:ems="10"
         android:hint="Tên đăng nhập"
+        android:text="admin"
         android:inputType="textPersonName" />
 
     <EditText
@@ -40,6 +41,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="208dp"
+        android:text="admin"
         android:ems="10"
         android:hint="Mật khẩu"
         android:inputType="textPassword" />
