@@ -8,12 +8,11 @@
     android:padding="20dp"
     tools:context=".TheLoaiFragment">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_theloaisach"
+    <ListView
+        android:id="@+id/lv_theloaisach"
         android:layout_width="match_parent"
         android:layout_height="411dp">
-
-    </android.support.v7.widget.RecyclerView>
+    </ListView>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_themtheloai"

@@ -51,6 +51,7 @@ public class TheLoaiDAO {
     }
 
     public void suaTheLoai(TheLoai tl){
+        dbh=new DBHelper(c);
         db = dbh.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("tentheloai",tl.tentheloai);
